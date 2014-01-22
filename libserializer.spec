@@ -29,7 +29,7 @@ Summary: Javadoc for %{name}
 Requires: %{name} = %{version}-%{release}
 %else
 Requires: %{name} = %{EVRD}
-%endi
+%endif
 Requires: jpackage-utils
 
 %description javadoc
