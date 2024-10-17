@@ -13,7 +13,7 @@ License: LGPLv2+
 #unzip, find . -name "*.jar" -exec rm {} \;
 #to simplify the licensing
 Source: libserializer-%{version}-jarsdeleted.zip
-URL: http://reporting.pentaho.org
+URL: https://reporting.pentaho.org
 BuildRequires: ant, ant-contrib, java-devel, jpackage-utils, libbase >= 1.1.2
 Requires: java, jpackage-utils, libbase >= 1.1.2
 BuildArch: noarch
