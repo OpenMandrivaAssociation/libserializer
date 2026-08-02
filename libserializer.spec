@@ -4,8 +4,8 @@
 Epoch: 1
 %endif
 Name: libserializer
-Version: 1.1.2
-Release: 10.0%{?dist}
+Version: 1.1.6
+Release: 1%{?dist}
 Summary: JFreeReport General Serialization Framework
 License: LGPLv2+
 
@@ -17,7 +17,7 @@ URL: https://reporting.pentaho.org
 BuildRequires: ant, ant-contrib, java-devel, jpackage-utils, libbase >= 1.1.2
 Requires: java, jpackage-utils, libbase >= 1.1.2
 BuildArch: noarch
-Patch0: libserializer-1.1.2.build.patch
+Patch0: libserializer-1.1.6.build.patch
 
 %description
 Libserializer contains a general serialization framework that simplifies the
@@ -37,7 +37,7 @@ Javadoc for %{name}.
 
 %prep
 %setup -q -c
-%patch0 -p1 -b .build
+%patch -P0 -p1 -b .build
 find . -name "*.jar" -exec rm -f {} \;
 mkdir -p lib
 build-jar-repository -s -p lib libbase commons-logging-api
